@@ -9,7 +9,7 @@ jobs:
     - name: Trigger jenkins job
       uses: jabbukka/jenkins-trigger@main
       with:
-       url: ${{ http://localhost:8080/ }}
+       url: http://localhost:8080/
        job_name: "Build-test_trigger"
        user_name: Test-trigger
        api_token: 117908777c6b77e4b6a0f9ee975a6c0396

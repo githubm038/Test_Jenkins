@@ -21,4 +21,4 @@ jobs:
           jenkins-pat: 117908777c6b77e4b6a0f9ee975a6c0396
           poll-time: 10
           timeout-value: 600
-          verbose: true
+          verbose: false

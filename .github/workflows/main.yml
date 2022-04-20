@@ -6,10 +6,12 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: trigger single Job
-      uses: mickeygoussetorg/trigger-jenkins-job@v1
+    - name: Trigger jenkins job
+      uses: jabbukka/jenkins-trigger@main
       with:
-        url: "http://localhost:8080/"
-        user: "Test-trigger"
-        token: 117908777c6b77e4b6a0f9ee975a6c0396
-        job: "foobar"
+       url: ${{ http://localhost:8080/ }}
+       job_name: "Build-test_trigger"
+       user_name: ${{ Test-trigger }}
+       api_token: ${{ 117908777c6b77e4b6a0f9ee975a6c0396 }}
+       wait: "true"
+       timeout: "1000"

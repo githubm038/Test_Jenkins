@@ -15,7 +15,7 @@ jobs:
       - id: testjenkinsaction
         uses: mickeygoussetorg/trigger-jenkins-job@v1
         with:
-          jenkins-server: "${{ secrets.http://localhost:8080/ }}"
+          jenkins-server: ${{ secrets.http://localhost:8080/ }}
           jenkins-job: "Build-test_trigger"
           jenkins-username: ${{ secrets.Test-trigger }}
           jenkins-pat: ${{ secrets.117908777c6b77e4b6a0f9ee975a6c0396 }}

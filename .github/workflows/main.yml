@@ -1,24 +1,15 @@
-name: Test Jenkins Action
-
-on:
-  workflow_dispatch:
-
-
+name: trigger jenkins job
+on: [push]
 jobs:
 
-  testaction:
-    
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    
     steps:
-      
-      - id: testjenkinsaction
-        uses: mickeygoussetorg/trigger-jenkins-job@v1
-        with:
-          jenkins-server: http://localhost:8080/
-          jenkins-job: Build-test_trigger
-          jenkins-username: Test-trigger
-          jenkins-pat: 117908777c6b77e4b6a0f9ee975a6c0396
-          poll-time: 10
-          timeout-value: 600
-          verbose: false
+    - name: trigger single Job
+      uses: appleboy/jenkins-action@master
+      with:
+        url: "http://localhost:8080/"
+        user: "Test-trigger"
+        token: ${{ 117908777c6b77e4b6a0f9ee975a6c0396 }}
+        job: "foobar"

@@ -1,1 +1,1 @@
-echo "helloSSSSSSSSSSSSS"
+echo "hello world"

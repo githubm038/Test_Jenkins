@@ -21,4 +21,3 @@ jobs:
           jenkins-pat: secrets.11b14a3d02cdc5a75b80fd44c9e9554686
           poll-time: 10
           timeout-value: 600
-          verbose: false

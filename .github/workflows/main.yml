@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: trigger single Job
-      uses: toptal/jenkins-job-trigger-action@master
+      uses: jabbukka/jenkins-trigger@main
       with:
         url: "http://localhost:8080/"
         user: "Test-trigger"

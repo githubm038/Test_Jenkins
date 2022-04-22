@@ -14,9 +14,9 @@ jobs:
       - id: testjenkinsaction
         uses: mickeygoussetorg/trigger-jenkins-job@v1
         with:
-          jenkins-server: secrets.http://localhost:8080/
+          jenkins-server: secrets.172.16.10.186:8080
           jenkins-job: buildtrigger
           jenkins-username: secrets.trigger
-          jenkins-pat: secrets.11b14a3d02cdc5a75b80fd44c9e9554686
+          jenkins-pat: secrets. 116bfcb234693eed27b4bbc959cd25e9fb
           poll-time: 10
           timeout-value: 600

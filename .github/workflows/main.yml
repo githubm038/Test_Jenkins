@@ -8,7 +8,6 @@ jobs:
 
   testaction:
     
-    runs-on: ubuntu-latest
     
     steps:
       
